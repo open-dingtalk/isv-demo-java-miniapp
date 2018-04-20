@@ -1,0 +1,10 @@
+com/dingtalk/isv/access/web/test/TestService.class
+com/dingtalk/isv/access/web/test/TestServiceClient.class
+com/dingtalk/isv/access/web/test/impl/TestServiceImpl.class
+com/dingtalk/isv/access/web/controller/JsConfigController.class
+com/dingtalk/isv/access/web/controller/suite/manage/SuiteManageController.class
+com/dingtalk/isv/access/web/interceptor/ControllorAOP.class
+com/dingtalk/isv/access/web/controller/SystemController.class
+com/dingtalk/isv/access/web/controller/suite/callback/SuiteCallBackController.class
+com/dingtalk/isv/access/web/common/SystemConfig.class
+com/dingtalk/isv/access/web/common/UTF8StringHttpMessageConverter.class

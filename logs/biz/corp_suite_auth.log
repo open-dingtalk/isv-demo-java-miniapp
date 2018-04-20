@@ -1,0 +1,4 @@
+2018-04-19 15:30:01,754 INFO  CorpSuiteAuthServiceImpl.getCorpSuiteAuth:63 - logEvent:开始traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		corpId:null	suiteKey:suiteuov7o83wnngpm0pb
+2018-04-19 15:30:01,764 WARN  CorpSuiteAuthServiceImpl.getCorpSuiteAuth:70 - logEvent:结束traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		msg:授权关系未找到	corpId:null	suiteKey:suiteuov7o83wnngpm0pb
+2018-04-19 15:31:47,911 INFO  CorpSuiteAuthServiceImpl.getCorpSuiteAuth:63 - logEvent:开始traceId:30aec59d-c7ea-4f83-942a-4fc7babbabc1		corpId:ding7db2994086e887a935c2f4657eb6378f	suiteKey:suiteuov7o83wnngpm0pb
+2018-04-19 17:42:29,210 INFO  CorpSuiteAuthServiceImpl.getCorpSuiteAuth:63 - logEvent:开始traceId:b05b6e98-f398-450f-92f2-299cf1cd9147		corpId:ding7db2994086e887a935c2f4657eb6378f	suiteKey:suiteuov7o83wnngpm0pb

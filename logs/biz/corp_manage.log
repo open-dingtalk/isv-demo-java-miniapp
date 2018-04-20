@@ -1,0 +1,106 @@
+2018-04-19 15:30:01,722 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		suiteKey:suiteuov7o83wnngpm0pb	corpId:null
+2018-04-19 15:30:01,766 ERROR CorpManageServiceImpl.getCorpToken:163 - logEvent:结束traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		msg:系统异常java.lang.NullPointerException	suiteKey:suiteuov7o83wnngpm0pb	corpId:null
+java.lang.NullPointerException
+	at com.dingtalk.isv.access.biz.service.CorpManageServiceImpl.getCorpToken(CorpManageServiceImpl.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at com.dingtalk.isv.access.common.log.service.ServiceMethodInterceptor.invoke(ServiceMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy32.getCorpToken(Unknown Source)
+	at com.dingtalk.isv.access.biz.service.EmpManageServiceImpl.getEmpByAuthCode(EmpManageServiceImpl.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at com.dingtalk.isv.access.common.log.service.ServiceMethodInterceptor.invoke(ServiceMethodInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy34.getEmpByAuthCode(Unknown Source)
+	at com.dingtalk.isv.access.web.controller.JsConfigController.getUserInfo(JsConfigController.java:110)
+	at com.dingtalk.isv.access.web.controller.JsConfigController$$FastClassBySpringCGLIB$$8ef367ae.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:80)
+	at com.dingtalk.isv.access.web.interceptor.ControllorAOP.handler(ControllorAOP.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.dingtalk.isv.access.web.controller.JsConfigController$$EnhancerBySpringCGLIB$$cf7bf88d.getUserInfo(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:745)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:686)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:452)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-19 15:31:47,879 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:30aec59d-c7ea-4f83-942a-4fc7babbabc1		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:31:48,165 INFO  CorpManageServiceImpl.saveOrUpdateCorpToken:89 - logEvent:开始traceId:30aec59d-c7ea-4f83-942a-4fc7babbabc1		corpTokenVO:{"corpId":"ding7db2994086e887a935c2f4657eb6378f","corpToken":"ac7b5893543d39678977c2d31e73b5e2","expiredTime":1524130308161,"suiteKey":"suiteuov7o83wnngpm0pb"}
+2018-04-19 15:32:28,619 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:17bb8c40-4680-4fe1-9318-bbeaf5c8eb09		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:33:57,003 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:9ae7d4cc-72d3-49b6-bb66-5530ccc2c10d		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:34:58,214 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:83d29ab6-b3af-4473-a48f-6eeaf853fef2		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:35:32,218 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:ad1ece37-8d56-4900-bca3-853799bfcdf8		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:35:46,125 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:fce45eeb-48ac-47f5-9252-1370df4e9dfb		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:35:55,296 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:26b036db-2f5a-4938-bc0d-c8f4d1726d79		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:37:29,034 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:b05b6e98-f398-450f-92f2-299cf1cd9147		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:37:39,372 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:a2e3e3cf-74d4-40bc-ac00-12185c208514		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:37:54,535 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:38:44,804 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:30aec59d-c7ea-4f83-942a-4fc7babbabc1		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:39:02,881 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:17bb8c40-4680-4fe1-9318-bbeaf5c8eb09		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:39:13,681 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:9ae7d4cc-72d3-49b6-bb66-5530ccc2c10d		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:39:27,091 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:83d29ab6-b3af-4473-a48f-6eeaf853fef2		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:40:18,422 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:ad1ece37-8d56-4900-bca3-853799bfcdf8		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 15:40:43,390 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:fce45eeb-48ac-47f5-9252-1370df4e9dfb		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 17:42:29,184 INFO  CorpManageServiceImpl.getCorpToken:112 - logEvent:开始traceId:b05b6e98-f398-450f-92f2-299cf1cd9147		suiteKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f
+2018-04-19 17:42:29,635 INFO  CorpManageServiceImpl.saveOrUpdateCorpToken:89 - logEvent:开始traceId:b05b6e98-f398-450f-92f2-299cf1cd9147		corpTokenVO:{"corpId":"ding7db2994086e887a935c2f4657eb6378f","corpToken":"cb70b58fd0fe3f2aae6bb8cae0a0c4af","expiredTime":1524138149635,"suiteKey":"suiteuov7o83wnngpm0pb"}

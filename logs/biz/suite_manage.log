@@ -1,0 +1,7 @@
+2018-04-20 02:31:16,392 INFO  SuiteManageServiceImpl.getSuiteToken:148 - logEvent:结束traceId:76a1cc3f-e5ca-4b67-9cb1-448991072847		suiteKey:suiteuov7o83wnngpm0pb
+2018-04-20 02:31:16,717 INFO  SuiteManageServiceImpl.saveOrUpdateSuiteToken:92 - logEvent:开始traceId:76a1cc3f-e5ca-4b67-9cb1-448991072847		suiteKey:suiteuov7o83wnngpm0pb
+2018-04-20 09:44:51,708 INFO  SuiteManageServiceImpl.getSuiteToken:148 - logEvent:结束traceId:76a1cc3f-e5ca-4b67-9cb1-448991072847		suiteKey:suiteuov7o83wnngpm0pb
+2018-04-20 09:44:51,781 INFO  SuiteManageServiceImpl.saveOrUpdateSuiteToken:92 - logEvent:开始traceId:76a1cc3f-e5ca-4b67-9cb1-448991072847		suiteKey:suiteuov7o83wnngpm0pb
+2018-04-20 09:49:59,990 INFO  SuiteManageServiceImpl.getSuiteToken:148 - logEvent:结束traceId:76a1cc3f-e5ca-4b67-9cb1-448991072847		suiteKey:suiteuov7o83wnngpm0pb
+2018-04-20 09:59:59,982 INFO  SuiteManageServiceImpl.getSuiteToken:148 - logEvent:结束traceId:76a1cc3f-e5ca-4b67-9cb1-448991072847		suiteKey:suiteuov7o83wnngpm0pb
+2018-04-20 10:09:59,981 INFO  SuiteManageServiceImpl.getSuiteToken:148 - logEvent:结束traceId:76a1cc3f-e5ca-4b67-9cb1-448991072847		suiteKey:suiteuov7o83wnngpm0pb

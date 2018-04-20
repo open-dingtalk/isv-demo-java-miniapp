@@ -1,0 +1,92 @@
+2018-04-19 15:30:01,721 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		suitKey:suiteuov7o83wnngpm0pb	corpId:null	code:e599306de7633d7d89553701355bb956
+2018-04-19 15:30:01,781 ERROR EmpManageServiceImpl.getEmpByAuthCode:101 - logEvent:结束traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		msg:系统异常java.lang.NullPointerException	suitKey:suiteuov7o83wnngpm0pb	corpId:null	code:e599306de7633d7d89553701355bb956
+java.lang.NullPointerException
+	at com.dingtalk.isv.access.biz.service.EmpManageServiceImpl.getEmpByAuthCode(EmpManageServiceImpl.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at com.dingtalk.isv.access.common.log.service.ServiceMethodInterceptor.invoke(ServiceMethodInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy34.getEmpByAuthCode(Unknown Source)
+	at com.dingtalk.isv.access.web.controller.JsConfigController.getUserInfo(JsConfigController.java:110)
+	at com.dingtalk.isv.access.web.controller.JsConfigController$$FastClassBySpringCGLIB$$8ef367ae.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:80)
+	at com.dingtalk.isv.access.web.interceptor.ControllorAOP.handler(ControllorAOP.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.dingtalk.isv.access.web.controller.JsConfigController$$EnhancerBySpringCGLIB$$cf7bf88d.getUserInfo(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:745)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:686)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:452)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-19 15:31:47,878 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:30aec59d-c7ea-4f83-942a-4fc7babbabc1		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:915958834bfa394bba6b8ed712ae8bfb
+2018-04-19 15:32:28,619 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:17bb8c40-4680-4fe1-9318-bbeaf5c8eb09		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:9e138bd2116e35499958f713e25ce5f6
+2018-04-19 15:33:57,003 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:9ae7d4cc-72d3-49b6-bb66-5530ccc2c10d		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:8f3aad95ebda38d1beab22c768b55774
+2018-04-19 15:34:58,213 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:83d29ab6-b3af-4473-a48f-6eeaf853fef2		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:3f382da2e14c3f80b804077f2fa9b593
+2018-04-19 15:35:32,218 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:ad1ece37-8d56-4900-bca3-853799bfcdf8		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:b4c25ed7f43f36008af52cccb302473a
+2018-04-19 15:35:46,125 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:fce45eeb-48ac-47f5-9252-1370df4e9dfb		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:6be749c1d49538f390d56446e7c8df7b
+2018-04-19 15:35:55,295 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:26b036db-2f5a-4938-bc0d-c8f4d1726d79		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:bf9f290ad71633259bab71a40aa1eb3c
+2018-04-19 15:37:29,034 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:b05b6e98-f398-450f-92f2-299cf1cd9147		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:8ec2313cab3d3158ad5304460cb2ff93
+2018-04-19 15:37:39,372 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:a2e3e3cf-74d4-40bc-ac00-12185c208514		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:f4226dce1e2a3d11995fdd59de4712af
+2018-04-19 15:37:54,535 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:f031e359-e3f6-4c50-8203-5ee7a16ab76b		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:0be761cc477e3ce5875fb333ef15b5f7
+2018-04-19 15:38:44,804 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:30aec59d-c7ea-4f83-942a-4fc7babbabc1		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:c4ac1afae90339b59e3f45e5a3fe442f
+2018-04-19 15:39:02,881 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:17bb8c40-4680-4fe1-9318-bbeaf5c8eb09		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:ff6537060e4c3a6ebe95ed6518b812cf
+2018-04-19 15:39:13,681 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:9ae7d4cc-72d3-49b6-bb66-5530ccc2c10d		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:350acbf47d833e2c9f8a6e72d6802137
+2018-04-19 15:39:27,091 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:83d29ab6-b3af-4473-a48f-6eeaf853fef2		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:6e39d0708a1f3fdeaa0d690ad85286a0
+2018-04-19 15:40:18,422 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:ad1ece37-8d56-4900-bca3-853799bfcdf8		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:a896e1c8b02f3afdb31478e261c359c2
+2018-04-19 15:40:43,390 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:fce45eeb-48ac-47f5-9252-1370df4e9dfb		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:1499282230ab329e9c5813f716f4cafd
+2018-04-19 17:42:29,183 INFO  EmpManageServiceImpl.getEmpByAuthCode:72 - logEvent:开始traceId:b05b6e98-f398-450f-92f2-299cf1cd9147		suitKey:suiteuov7o83wnngpm0pb	corpId:ding7db2994086e887a935c2f4657eb6378f	code:3894a4ff161c39359d39f5e8d71a2d7e
